@@ -1,11 +1,13 @@
+
 {% extends 'basic.html' %}
 
 {% block title %}
 Form
 {% endblock %}
 
-{%block body %}
-<br><br>
+{% block body %}
+
+
 
 <form method="post">
 
@@ -19,7 +21,7 @@ Form
       <input type="text" class="form-control" placeholder="Last name" name="l-name">
     </div>
   </div>
-  <br>
+<br>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Email</label>
@@ -64,8 +66,8 @@ Form
     </div>
   </div>
   <a href="/submit" class="btn btn-primary">
-    sign in
-  </a>
+  sign in
+    </a>
 </form>
 
 {% endblock %}

@@ -10,18 +10,16 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
     <title>
-
         {% block title %}
-        {% endblock %}
 
+               {% endblock %}
     </title>
   </head>
   <body>
   <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        {% load static %}
-  <a class="navbar-brand" href="http://switch2voip.us"><img src= "{% static 'blog_static/images/logo.png' %}" /> </a>
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    {% load static %}
+  <a class="navbar-brand" href="#"> <img src= "{% static 'shop_static/logo.png' %}" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -29,33 +27,29 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/rate">Rates</a>
+        <a class="nav-link" href="/shop/rate">Rate</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Services
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Virtual Phone Numbers</a>
-          <a class="dropdown-item" href="#">VoIP for Business</a>
-          <a class="dropdown-item" href="#">Contact Center VoIP and SIP Trunking</a>
-          <a class="dropdown-item" href="#">VoIP Service for Asterisk</a>
-          <a class="dropdown-item" href="#">800 Toll Free Numbers</a>
-          <a class="dropdown-item" href="#">A-Z VoIP Termination for Contact Centers</a>
-          <a class="dropdown-item" href="#">United Kingdom Toll Free Numbers</a>
+          <a class="dropdown-item" href="/services">Another</a>
+          <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          My Account
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          My account
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="/form">Sign Up</a>
+          <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
@@ -70,115 +64,114 @@
     </form>
   </div>
 </nav>
-      {% block body %}
+
+
+  {% block body %}
 
       {% endblock %}
 
-      <footer class="text-gray-700 body-font">
+    <footer class="text-gray-700 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
       <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Switch2VoIP</h2>
+        <h1 class="title-font font-medium text-gray-900 tracking-widest  mb-3">CATEGORIES</h1>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800" href="https://switch2voip.us/my-account/">Login</a>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800" href="https://switch2voip.us/product/5-signup-voip-test-credit/">Signup for VoIP</a>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800" href="https://switch2voip.us/buy-voip-credits/">Add Credits</a>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800" href="https://switch2voip.us/category/voip-para-negocios/">VoIP en Español</a>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
           </li>
         </nav>
       </div>
       <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Services</h2>
+        <h1 class="title-font font-medium text-gray-900 tracking-widest  mb-3">CATEGORIES</h1>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">VoIP for Business</a>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">VoIP for Call Centers</a>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Virtual Call Center</a>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">VoIP Phone Numbers</a>
-          </li>
-                  <li>
-            <a class="text-gray-600 hover:text-gray-800">Toll Free Numbers</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Bulk SMS Messaging</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Free USA VoIP Phone Number</a>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
           </li>
         </nav>
       </div>
       <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">About Us</h2>
+       <h1 class="title-font font-medium text-gray-900 tracking-widest  mb-3">CATEGORIES</h1>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Press Releases</a>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Blog</a>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">A-Z VoIP Rates</a>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Newsletter</a>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
           </li>
         </nav>
       </div>
       <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Customer Support</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Sales</a>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Support</a>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">FAQ’s</a>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600  hover:text-gray-800">Fourth Link</a>
           </li>
         </nav>
       </div>
       <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Legal</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Terms and Conditions</a>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Refund Policy</a>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Privacy</a>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
           </li>
         </nav>
       </div>
       <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Social</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800" href="http://www.facebook.com/pages/Switch2VoipUS/453691564661456">Facebook</a>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Twitter</a>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Linkedin</a>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Youtube</a>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
           </li>
         </nav>
       </div>
@@ -194,7 +187,7 @@
         </p>
       </div>
       <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
-        <a class="text-gray-500" href="http://www.facebook.com/pages/Switch2VoipUS/453691564661456">
+        <a class="text-gray-500" href="https://web.facebook.com/pages/Switch2VoipUS/453691564661456?_rdc=1&_rdr">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
           </svg>
@@ -204,33 +197,35 @@
             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500" href="https://instagram.com/switch2voip/">
+        <a class="ml-3 text-gray-500">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500" href="https://www.linkedin.com/organization-guest/company/switch2voip">
+        <a class="ml-3 text-gray-500" href="https://www.linkedin.com/authwall?trk=ripf&trkInfo=AQH5T17ToVR-BQAAAXN7wi1wkVM6meksVqx_A6FTQrDwTPTVfR59v5TePLvWtaR3I6bYrDp_FQ67qrDEnqZDq7UteCDG5ZaQM9rniL0TIL5MWOC11yXziXnQXCWcwygWGA8TKAI=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F2795017
+">
           <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+            </path>
             <circle cx="4" cy="4" r="2" stroke="none"></circle>
           </svg>
         </a>
-       <a class="ml-3" href="http://www.youtube.com"><img src="https://img.icons8.com/material-outlined/24/000000/youtube-play.png"/>
-      </a>
+     <a class="ml-3 " href="https://www.youtube.com/user/Switch2Voip">
+        <img src="https://img.icons8.com/material-two-tone/24/000000/youtube-play.png"/>
+     </a>
       </span>
     </div>
   </div>
   <div class="bg-gray-200">
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
       <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 tailblocks —
-        <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a>
+        <a href="https://twitter.com/switch2voip" class="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a>
       </p>
       <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Enamel pin tousled raclette tacos irony</span>
     </div>
   </div>
 </footer>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -1,28 +1,34 @@
-{%extends 'shop/basic.html'%}
-{%block title%}
-ShopHome
-{%endblock%}
 
-{%block body%}
-<h1>Shop app.....</h1>
-{%load static%}
+{% extends 'shop/basic.html' %}
 
-    <br>
-    <br>
+{% block title %}
+Form
+{% endblock %}
 
-<section class="text-gray-700 body-font">
+{% block body %}
+
+
+
+  <h1>SHop app.....</h1>
+{% load static %}
+  <br>
+  <br>
+
+  <section class="text-gray-700 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-4">
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="{% static 'shop_static/images_Blog_voip-services_A-Z-voip-termination-300x300.jpg' %}"/>
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="{% static 'shop_static/Switch2VoIP-buy-voip.png' %}"/>
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Phone Numbers</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Toll Free Numbers</h2>
-          <p class="mt-1">$16.00</p>
-            <br>
-            <a href="/shop/buyform" class="btn btn-primary">Buy</a>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">PHONE NUMBERS</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">TOLL FREE NUMBERS</h2>
+          <p class="mt-1">$16.00/month</p>
+          <br>
+          <a href="/shop/buyform" class="btn btn-primary">
+            Buy
+          </a>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -99,4 +105,4 @@ ShopHome
   </div>
 </section>
 
-{%endblock%}
+{% endblock %}

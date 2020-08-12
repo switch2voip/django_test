@@ -9,4 +9,4 @@ def services(request):
 def myaccount(request):
    return render(request,'shop/myaccount.html')
 def buyform(request):
-    return render(request, 'shop/Buyform.html')
+    return render(request,'shop/Buyform.html')

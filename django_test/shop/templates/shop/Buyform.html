@@ -1,10 +1,10 @@
-{%extends 'basic.html'%}
-{%block title%}
-ShopHome
-{%endblock%}
+{% extends 'shop/basic.html' %}
+
+{% block title %}
+Buyform
+{% endblock %}
 
 {% block css %}
-
 <style>
 .dropdown-submenu {
   position: relative;
@@ -25,19 +25,23 @@ ShopHome
 }
 </style>
 
-{% endblock %}
+{%endblock%}
 
-{%block body%}
+
+{% block body %}
 {% load static %}
+
+
 <section class="text-gray-700 body-font overflow-hidden">
   <div class="container px-5 py-24 mx-auto">
     <div class="lg:w-4/5 mx-auto flex flex-wrap">
-      <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="{% static 'shop_static/images_Blog_voip-services_A-Z-voip-termination-300x300.jpg' %}"/>
+      <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="{% static 'shop_static/Switch2VoIP-buy-voip.png' %}"/>
       <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-        <h2 class="text-sm title-font text-gray-500 tracking-widest">Phone Numbers</h2>
-        <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Toll Free Numbers</h1>
+        <h2 class="text-sm title-font text-gray-500 tracking-widest">PHONE NUMBERS</h2>
+        <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">TOLL PHONE NUMBERS</h1>
         <div class="flex mb-4">
           <span class="flex items-center">
+
             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
             </svg>
@@ -56,7 +60,7 @@ ShopHome
             <span class="text-gray-600 ml-3">4 Reviews</span>
           </span>
           <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200">
-            <a class="text-gray-500">
+            <a class="text-gray-500" href="">
               <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
               </svg>
@@ -75,42 +79,46 @@ ShopHome
         </div>
         <p class="leading-relaxed">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
         <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
-
+          
           <div class="flex ml-6 items-center">
-            <div class="relative">
+          
+               
+             
+            <div class="relative ml-10">
+            
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Submenu action</a></li>
-              <li><a class="dropdown-item" href="#">Another submenu action</a></li>
-
-
-              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
-                  <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
-                </ul>
-              </li>
-              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
-                  <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
-                </ul>
-              </li>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     Chose Country
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Submenu action</a></li>
+        <li><a class="dropdown-item" href="#">Another submenu action</a></li>
 
 
+        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
+            <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
+            <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+          </ul>
+        </li>
 
-            </ul>
-          </li>
-        </ul>
-      </li>
+      </ul>
+    </li>
+  </ul>
+</li>
+
+
 
               <span class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
@@ -134,11 +142,12 @@ ShopHome
   </div>
 </section>
 
-{% endblock %}
+
+{% endblock%}
 
 {% block js %}
 <script>
-  $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
   if (!$(this).next().hasClass('show')) {
     $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
   }
@@ -153,5 +162,6 @@ ShopHome
 
   return false;
 });
+
 </script>
-{% endblock %}
+{% endblock%}

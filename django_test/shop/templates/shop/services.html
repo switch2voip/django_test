@@ -1,18 +1,21 @@
-{%extends 'basic.html'%}
-{%block title%}
-ShopHome
-{%endblock%}
+{% extends 'shop/basic.html' %}
 
-{%block body%}
-<h1>Our services.....</h1>
-<br>
-<br>
+{% block title %}
+services
+{% endblock %}
 
-<section class="text-gray-700 body-font">
+{% block body %}
+
+  <h1>Services....</h1>
+
+   <br>
+   <br>
+
+   <section class="text-gray-700 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col">
-      <div class="h-1 bg-green-500 rounded overflow-hidden">
-        <div class="w-24 h-full bg-green-500"></div>
+      <div class="h-1 bg-gray-200 rounded overflow-hidden">
+        <div class="w-24 h-full bg-indigo-500"></div>
       </div>
       <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
         <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Space The Final Frontier</h1>
@@ -26,7 +29,7 @@ ShopHome
         </div>
         <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
         <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-        <a class="text-indigo-500 inline-flex items-center mt-3" href="https://switch2voip.us/a-z-voip-termination-for-call-centers/"><button class="btn btn-primary">Learn More</button>
+        <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
@@ -38,7 +41,7 @@ ShopHome
         </div>
         <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The Catalyzer</h2>
         <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-        <a class="text-indigo-500 inline-flex items-center mt-3" href="https://switch2voip.us/a-z-voip-termination-for-call-centers/"><button class="btn btn-primary">Learn More</button>
+        <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
@@ -50,7 +53,7 @@ ShopHome
         </div>
         <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
         <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-        <a class="text-indigo-500 inline-flex items-center mt-3" href="https://switch2voip.us/a-z-voip-termination-for-call-centers/"><button class="btn btn-primary">Learn More</button>
+        <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
@@ -59,5 +62,4 @@ ShopHome
     </div>
   </div>
 </section>
-
-{%endblock%}
+  {%endblock%}
